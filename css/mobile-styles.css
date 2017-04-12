@@ -1,0 +1,280 @@
+html, body{padding: 0; margin: 0; font-family: standaard, sans-serif; overflow-x: hidden;}
+
+@font-face { font-family: dik; src: url('dax-bold.ttf'); }
+@font-face { font-family: standaard; src: url('dax-reg.ttf'); }
+
+* {
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;}
+.col-1m {width: 8.33%;}
+.col-2m {width: 16.66%;}
+.col-3m {width: 25%;}
+.col-4m {width: 33.33%;}
+.col-5m {width: 41.66%;}
+.col-6m {width: 50%;}
+.col-7m {width: 58.33%;}
+.col-8m {width: 66.66%;}
+.col-9m {width: 75%;}
+.col-10m {width: 83.33%;}
+.col-11m {width: 91.66%;}
+.col-12m {width: 100%;}
+[class*="col-"] {
+    float: left;
+}
+@media screen and (max-width: 768px){
+  .headerimg { display: none; }
+}
+@media screen and (max-width: 768px){
+  .headerimg_small { display: block; }
+}
+@media screen and (max-width: 768px){
+    nav ul#menu li.menu_img {display: none;}
+    nav ul li a img{display: none;}
+    ul{display: none;}
+    #ecabo{display: none;}
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+#hamburger {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    display: block;
+    z-index: 1;
+    margin-right: 10%;
+    margin-top: 7%;
+    left: 68%;
+}
+#hamburger div{
+    height: 15px;
+    width: 90%;
+    margin-top: 18%;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 2px 2px 2px 2px;
+}
+header{
+    height: 40%;
+    width: 100%;
+    z-index: 0;
+}
+.headerimg_small{
+    position: absolute;
+    height: 40%;
+    z-index: 1;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+#header-logo{
+    position: relative;
+    z-index: 3;
+    margin: 5%;
+    height 80px;
+    width: auto;
+}
+nav{
+    position: absolute;
+    z-index: 4;
+    margin-top: 40%;
+    height: 100%;
+    font-family: font1, sans-serif;
+}
+ul{
+    list-style-type: none;
+    color: #007ac2;
+    background-color: #007ac2;
+    margin-left: -10%;
+}
+li{
+    text-align: center;
+    height: 10%;
+    padding-top: 5%;
+}
+li:not(.bottom){
+    border-bottom: 4px solid white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.header-text{
+    position: relative;
+    z-index: 1;
+}
+.headertext1{
+    z-index: 2;
+    color: #007ac2;
+    font-size: 20px;
+    text-align: center;
+    background-color: #4a4a49;
+}
+.headertext2{
+    z-index: 2;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-color: #4a4a49;
+}
+.footermenu br{
+    display: none;
+}
+.footersocial br{
+    display: none;
+}
+.footer{
+    background-color: #4a4a49;
+    font-size: 13.7;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.footermenu p{
+    display: inline-block;
+}
+.footermenu{
+    margin-top: 2%;
+    width: 100%;
+}
+.footerinfo{
+    text-align: center;
+    margin-top: 2%;
+    line-height: 140%;
+    width: 100%;
+}
+.footersocial{
+    width: 100%;
+    margin: auto;
+    display: inline;
+}
+.footersocial img{
+    margin: 4%;
+}
+.footercr{
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    background-color: #1d1d1d;
+    color: #4a4a49;
+}
+.blokken{
+    margin-top: 10%;
+}
+.blok{
+    margin-bottom: 20%;
+}
+.blok p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 25%;
+    width: 90%;
+    margin-left: 5%;
+}
+.vormgeving{
+    padding: 2%;
+    margin: auto;
+    position: absolute;
+    max-height: 20%;
+    left: 0;right: 0;
+}
+.vormgeving img{
+    width: 20%;
+    margin: auto;
+    display: block;
+}
+.ontwikkeling{
+     padding: 2%;
+    margin: auto;
+    position: absolute;
+    max-height: 20%;
+    left: 0;right: 0;
+}
+.ontwikkeling img{
+    width: 20%;
+    margin: auto;
+    display: block;
+}
+.hardware{
+     padding: 2%;
+    margin: auto;
+    position: absolute;
+    max-height: 20%;
+    left: 0;right: 0;
+}
+.hardware img{
+    width: 20%;
+    display: block;
+    margin: auto;
+}
+.hosting{
+     padding: 2%;
+    margin: auto;
+    position: absolute;
+    max-height: 20%;
+    left: 0;right: 0;
+}
+.hosting img{
+    width: 20%;
+    margin: auto;
+    display: block;
+}
+#overtxt{
+    padding: 5%;
+    margin: auto;
+    margin-top: -20%;
+}
+#head{
+    font-size: 14.84px;
+    color: #706f6f;
+}
+#overhead{
+    font-size: 30.83px;
+    color: black;
+    font-family: "arial";
+    font-weight: 600;
+    padding-bottom: 3%;
+    border-bottom: 2px solid #dadada;
+}
+#overtext{
+    color: #70706f;
+    font-size: 18px;
+}
+#overtext br{
+    display: none;
+}
+.webheadtext{
+    margin-top:30%;
+    margin-left: 8%;
+    text-align: center;
+}
+.content{
+    overflow: scroll;
+}
+.weblist{
+    color: white;
+    font-weight: 600;
+    background-color: #37b7e8;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: -30%;
+}
+.contenttext{
+    width: 55%;
+}
+.webtext{
+    height: 100%;
+}
+.contenttext br{
+    display: none;
+}
+.webimgcontainer{
+    overflow: hidden;
+}
+.webcontent{
+}

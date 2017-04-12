@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/desktop-styles.css"/>
+        <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile-styles.css"/>
+    </head>
+    <body>
+        <div class="col-2 col-6m logo">
+                    <img src="img/logo.png" id="header-logo">
+                </div>
+            <div id="hamburger" class="col-6m" onclick="hamburger()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <script>
+                function hamburger()
+                            { var x = document.getElementById('menu');
+                if (x.style.display === 'none') {
+                    x.style.display = 'block';
+                } else {
+                    x.style.display = 'none';
+                }
+                }
+            </script>
+                <!-- Navigation -->
+            <nav class="col-10 col-12m">
+                <ul id="menu">
+                    <!-- Social -->
+                    <li class="menu_img"><a href="https://nl.linkedin.com/company/dragon-media-group-bv"><img src="img/linkedin_menu.png" class="menuimg" style="padding:'9px;'"></a></li>
+                    <li class="menu_img"><a href="https://www.facebook.com/DragonMediaGroupBv/"><img src="img/facebook_menu.png" class="menuimg"></a></li>
+                    <li class="menu_img"><a href="https://twitter.com/dragon_media"><img src="img/twitter_menu.png" class="menuimg"></a></li>
+                    <li><input type="search" name="search"></li>
+                    <!-- Menu -->
+                    <li><a href="klantportaal.html">KLANTPORTAAL  <img src="img/arrow_li.png"></a></li>
+                    <li><a href="contact.html">CONTACT  <img src="img/arrow_li.png"></a></li>
+                    <li><a href="referenties.html">REFERENTIES  <img src="img/arrow_li.png"></a></li>
+                    <li><a href="webhosting.html">WEBHOSTING &amp; E-MAIL  <img src="img/arrow_li.png"></a></li>
+                    <li><a href="hardware.html">HARDWARE  <img src="img/arrow_li.png"></a></li>
+                    <li><a href="webontwikkeling.html">WEBONTWIKKELING  <img src="img/arrow_li.png"></a></li>
+                    <li class="bottom"><a href="index.html" class="active">HOME  <img src="img/arrow_li.png"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="content col-12">
+            <div class="col-12 webheadtext">
+                <p class="smallheadtext"><i>Een mooie online etalage</i></p>
+                <p class="headtext"><b>WEBONTWIKKELING</b></p>
+            </div>
+            <div class="col-12 col-12m webcontent">
+                <div class="col-6 col-12m webtext">
+                    <p class="smallheadtext" style="color:'grey'"><i>slimme techniek</i></p>
+                    <p class="bigheadtext" style="color:black"><b>Jouw eigen website</b></p>
+                    <div class="col-12 col-12m webunderline"></div>
+                    <p class="contenttext"><br>Wij zijn broncode specialisten en projectplanners. Wij kunnen uw website,<br> webshop of administratiesysteem bouwen met aangepaste functionaliteiten.<br> Gebruiksgemak staat vooraan!</p>
+                </div>
+                <div class="col-2 weblist">
+                    <p>> Content beheer -<br> 
+                    &nbsp;&nbsp; DMG CMS <br>
+                    > One-page ontwikkeling<br>
+                    > Administratiesystemen<br>
+                    > Zoekmachine <br>
+                    &nbsp;&nbsp; optimalisatie<br>
+                    > Wordpress open-source<br>
+                    > E-commerce – <br>
+                    &nbsp;&nbsp; online verkoop<br>
+                    > Web-apps<br></p>
+                </div>
+                <div class="col-4 webimgcontainer"><img id="webimg"src="img/webimg.png"></div>
+            </div>
+        </section>
+    </body>
+        <footer class="col-12 col-12m footer">
+            <div class="col-4 col-12m footermenu">
+                <p>
+                    <a href="index.html">> Home</a><br>
+                    <a href="hardware.html">> Diensten</a><br>
+                    <a href="webhosting.html">> Hosting</a><br>
+                    <a href="referenties.html">> Referenties</a><br>
+                    <a href="klantportaal.html">> Klantportaal</a><br>
+                    <a href="contact.html">> Contact</a>
+                </p>
+            </div>
+            <div class="col-4 col-12m footerinfo">
+                <p>
+                    Dragon Media Group<br><br>
+                    Klokhoek 12<br><br>
+                    3833 GX Leusden<br><br>
+                    Tel: 033 - 494 89 15<br>
+                    Fax: 033-4948921<br><br>
+                    info@dragonmediagroup.nl
+                </p>
+            </div>
+            <div class="col-4 col-12m footersocial">
+                <a href="https://twitter.com/dragon_media"><img src="img/twitterwhite.png"></a><br>
+                <a href="https://www.facebook.com/DragonMediaGroupBv/"><img src="img/fbwhite.png"></a><br>
+                <a href="https://nl.linkedin.com/company/dragon-media-group-bv"><img src="img/linkedinwhite.png"></a><br>
+            
+            </div>
+            <div class="col-12 footercr">
+                <p>© 2017  |  Dragon Media Group BV Leusden</p>
+            </div>
+        </footer>
+</html>
