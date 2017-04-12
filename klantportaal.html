@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+        <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/desktop-styles.css"/>
+        <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile-styles.css"/>        
+    </head>
+    <header class="header col-12 col-12m">
+        <div class="col-2 col-6m logo">
+                    <img src="img/logo.png" id="header-logo">
+                </div>
+            <div id="hamburger" class="col-6m" onclick="hamburger()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <script>
+                function hamburger()
+                            { var x = document.getElementById('menu');
+                if (x.style.display === 'none') {
+                    x.style.display = 'block';
+                } else {
+                    x.style.display = 'none';
+                }
+                }
+            </script>
+                <!-- Navigation -->
+            <nav class="col-10 col-12m">
+                <ul id="menu">
+                    <!-- Social -->
+                    <li class="menu_img"><a href="https://nl.linkedin.com/company/dragon-media-group-bv"><img src="img/linkedin_menu.png" class="menuimg" style="padding:'9px;'"></a></li>
+                    <li class="menu_img"><a href="https://www.facebook.com/DragonMediaGroupBv/"><img src="img/facebook_menu.png" class="menuimg"></a></li>
+                    <li class="menu_img"><a href="https://twitter.com/dragon_media"><img src="img/twitter_menu.png" class="menuimg"></a></li>
+                    <li><input type="search" name="search"></li>
+                    <!-- Menu -->
+                    <li><a href="klantportaal.html">KLANTPORTAAL  <img src="img/arrow_li.png"></a></li>
+                    <li><a href="contact.html">CONTACT  <img src="img/arrow_li.png"></a></li>
+                    <li><a href="referenties.html">REFERENTIES  <img src="img/arrow_li.png"></a></li>
+                    <li><a href="webhosting.html">WEBHOSTING &amp; E-MAIL  <img src="img/arrow_li.png"></a></li>
+                    <li><a href="hardware.html">HARDWARE  <img src="img/arrow_li.png"></a></li>
+                    <li><a href="webontwikkeling.html">WEBONTWIKKELING  <img src="img/arrow_li.png"></a></li>
+                    <li class="bottom"><a href="index.html" class="active">HOME  <img src="img/arrow_li.png"></a></li>
+                </ul>
+            </nav>
+    </header>
+    <body>
+        <section class="klantbg">
+            <div class="col-12 webheadtext">
+                <p class="smallheadtext"><i>Uw eigen omgeving</i></p>
+                <p class="headtext"><b>KLANTPORTAAL</b></p>
+            </div>
+            <div class="col-12">
+                <div class="col-4 inlogtab">
+                    <div class="col-10 inlogcontent">
+                        <p class="inlogheadtext">Dragon Media Group BV</p>
+                        <p class="inlogsubtext">Klantenportaal</p>
+                        <div class="col-12 underlineinlog"></div>
+                        <form class="col-12">
+
+                            <b>Uw gebruikersnaam</b><br>
+                            <input type="text" placeholder="gebruikersnaam" name="user" required><br><br>
+                            <b>Uw wachtwoord</b><br>
+                            <input type="password" placeholder="********" name="pwd" required>
+                            <p>Kunt uw niet inloggen? <a href="contact.html">Neem telefonisch contact op</a></p>
+                            <div class="inlogbtn" onclick="inlog()">Inloggen</div>
+                            <p id="geenklant">Bent uw nog geen klant? <a>Bekijk onze diensten</a></p>
+                        </form>
+                        <script>
+                            function inlog() {
+                                alert("Inloggen is niet beschikbaar op dit moment, we werken aan een oplossing")
+                            }
+                        </script>
+                    </div>
+                </div>
+        </div>
+        </section>
+    </body>
+        <footer class="col-12 col-12m footer">
+            <div class="col-4 col-12m footermenu">
+                <p>
+                    <a href="index.html">> Home</a><br>
+                    <a href="hardware.html">> Diensten</a><br>
+                    <a href="webhosting.html">> Hosting</a><br>
+                    <a href="referenties.html">> Referenties</a><br>
+                    <a href="klantportaal.html">> Klantportaal</a><br>
+                    <a href="contact.html">> Contact</a>
+                </p>
+            </div>
+            <div class="col-4 col-12m footerinfo">
+                <p>
+                    Dragon Media Group<br><br>
+                    Klokhoek 12<br><br>
+                    3833 GX Leusden<br><br>
+                    Tel: 033 - 494 89 15<br>
+                    Fax: 033-4948921<br><br>
+                    info@dragonmediagroup.nl
+                </p>
+            </div>
+            <div class="col-4 col-12m footersocial">
+                <a href="https://twitter.com/dragon_media"><img src="img/twitterwhite.png"></a><br>
+                <a href="https://www.facebook.com/DragonMediaGroupBv/"><img src="img/fbwhite.png"></a><br>
+                <a href="https://nl.linkedin.com/company/dragon-media-group-bv"><img src="img/linkedinwhite.png"></a><br>
+            
+            </div>
+            <div class="col-12 footercr">
+                <p>© 2017  |  Dragon Media Group BV Leusden</p>
+            </div>
+        </footer>
+</html>

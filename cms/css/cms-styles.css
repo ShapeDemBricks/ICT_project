@@ -1,0 +1,100 @@
+html{font-family: font2, sans-serif;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+@font-face { font-family: font1; src: url('dax-bold.ttf'); }
+@font-face { font-family: font2; src: url('dax-reg.ttf'); }
+
+* {
+    box-sizing: border-box;
+}
+[class*="col-"] {
+    float: left;
+    padding: 0.01px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+menu{
+    margin-top: -20px;
+}
+ul {
+    list-style-type: none;
+    overflow: auto;
+    background-color: rgba(52, 152, 219,1.0);
+}
+li {
+    float: left;
+}
+a {
+    display: block;
+    color: white;
+    padding: 14px;
+    text-decoration: none;
+}
+a:hover:not(.active) {
+    background-color: rgba(236, 240, 241,1.0);
+    color: rgba(41, 128, 185,1.0);
+}
+.active {
+    background-color: rgba(41, 128, 185,1.0);
+}
+#uitloggen{
+    float: right;
+}
+.main{
+    height: 82%;
+    background-color: rgba(41, 128, 185,1.0);
+}
+.dashboard{
+    height: 70%;
+    background-color: rgba(236, 240, 241,1.0);
+}
+.footer{
+    height: 9%;
+    background-color: rgba(236, 240, 241,1.0);
+}
+.spacer{
+    height: 50px;
+}
+.footermenu{
+    float: right;
+    margin-top: 1%;
+    margin-right: 15px;
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+            transition: transform .3s ease-in-out;
+}
+.footermenu:hover:not(.settingsbtn){ 
+        background-color: rgba(52, 152, 219,1.0);
+}
+.settingsbtn:hover{
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+.block{
+    font-family: font1, sans-serif;
+    display:table-cell; 
+    vertical-align:middle; 
+    text-align:center;
+    border: 5px solid rgba(52, 152, 219,1.0);
+}
+.blockimg{
+    padding: 25px;
+}

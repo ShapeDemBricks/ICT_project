@@ -6,11 +6,8 @@
         <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile-styles.css"/>
     </head>
     <body>
-        <header class="header col-12 col-12m">
-            
-            <img src="img/Foto%20header.png" class="headerimg col-12">
-            <img src="img/Foto%20header_small.jpg" class="headerimg_small col-12m">
-                <div class="col-2 col-6m logo">
+        <header class="header col-12">
+            <div class="col-2 col-6m logo">
                     <img src="img/logo.png" id="header-logo">
                 </div>
             <div id="hamburger" class="col-6m" onclick="hamburger()">
@@ -47,84 +44,79 @@
                 </ul>
             </nav>
         </header>
-            <div id="ecabo"><img src="img/ecabo-logo.png"></div>
-            <div id="header-text" class="col-12m">
-                <div class="headertext1 col-12 col-12m">
-                    Een website bouwen
-                </div>
-                <div class="headertext2 col-12 col-12m">
-                    De kunst zit hem in het beheren <br/>
-                    van het proces!
-                </div>
-            </div>
-        <section class="col-10 col-12m blokken">
-            <div class="blok col-3 col-12m">
-                <div class="col-5 vormgeving">
-                    <img src="img/vormgeving.png">
-                </div>
-                    <p>
-                    <font color='#007ac2'>Vormgeving</font><br>
-                    Wij ontwerpen onder andere websites, <br>
-                    logo’s en visitekaartjes, reclamedrukwerk<br>
-                    en verpakkingen.
-                    </p>
-            </div>
-            <div class="blok col-3 col-12m">
-                <div class="col-5 ontwikkeling">
-                    <img src="img/ontwikkelen.png">
-                </div>
-                    <p>
-                    <font color='#007ac2'>Web ontwikkeling</font> <br>
-                    
-                    Wij kunnen uw website, webshop of<br>
-                    administratiesysteem bouwen met aangepaste<br>
-                    functionaliteiten. 
-                    </p>
-            </div>
-            <div class="blok col-3 col-12m">
-                <div class="col-5 hardware">
-                    <img src="img/hardware.png">
-                </div>
-                <p>
-                    <font color='#007ac2'>Hardware</font> <br>
-                    
-                    Wij bieden tevens vaste oplossingen als<br>
-                    professionele audio/video apparatuur en video<br> 
-                    streaming.
-                </p>
-            </div>
-            <div class="blok col-3 col-12m">
-                <div class="col-5 hosting">
-                    <img src="img/webhost.png">
-                </div>
-                    <p>
-                    <font color='#007ac2'>Webhosting &amp; e-mail</font> <br>
-                    Dragon Media Group is premier partner van de <br>
-                    Panasonic Toughbook &amp; Toughpad lijn en <br>
-                    bedient verscheidene marktsegmenten.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="col-12 col-12m container">
-            <img src="img/overons.png" class="overonsimg col-6 col-12m">
-            <div class="overons col-6 col-12m">
-                <div id="overtxt">
-                    <br><br><br><br><br>
-                        <p id="head">Dragon Media Group, sinds 2005</p>
-                        <p id="overhead">OVER ONS</p>
-                        <p id="overtext">Dragon Media Group is een dynamisch multimediabedrijf waar alle online technieken<br> 
-                           centraal staan.Wij leveren onder andere maatwerk webtechniek, webdesign,<br>
-                           webhosting &amp; aanvullende diensten. Mede door onze korte lijnen kunnen wij u op<br> 
-                           microniveau ondersteunen en begeleiden tijdens de ontwikkeling van uw website dan<br> 
-                           wel de ontwikkeling van uw nieuwe huisstijl en online vertegenwoordiging.<br><br>
-
-                           Onze jonge, energieke groep werknemers staan voor u klaar om op hoog niveau<br> 
-                           ondersteuning te bieden en met u mee te denken. Wij zorgen samen met u voor de<br>
-                           juiste oplossingen horende bij uw toepassing.</p>
+        <div class="col-12 webheadtext">
+            <p class="smallheadtext"><i>Ons werk</i></p>
+            <p class="headtext"><b>REFERENTIES</b></p>
+        </div>
+        <div class="refslider">
+            <ul>
+                <li><a onclick="document.getElementById('ref1').style.display='block';
+                document.getElementById('ref2').style.display='block';
+                document.getElementById('ref3').style.display='block';
+                document.getElementById('ref4').style.display='block';">ALLES</a></li>
+                <li><a onclick="document.getElementById('ref1').style.display='block';
+                document.getElementById('ref2').style.display='none';
+                document.getElementById('ref3').style.display='block';
+                document.getElementById('ref4').style.display='none';">WEBSITES</a></li>
+                <li><a onclick="document.getElementById('ref1').style.display='none';
+                document.getElementById('ref2').style.display='block';
+                document.getElementById('ref3').style.display='none';
+                document.getElementById('ref4').style.display='none';">HUISSTIJLEN</a></li>
+                <li><a onclick="verpak()">VERPAKKINGEN</a></li>
+                <li><a onclick="divers()">DIVERSEN</a></li>
+            </ul>
+        </div>
+        <div class="col-12 refcontent">
+            <div class="col-3 blokeven" id="ref1">
+                <div class="col-12">
+                    <div class="ref">
+                        <img src="img/ref1.png">
+                    </div>
+                    <div class="reftext">
+                        <p><b>Werken aan de wereld</b></p>
+                        <div class="col-8 refline"></div>
+                        <p class="reftextbase">Dit is een project geweest waarbij<br> we een informatie website moesten opzetten<br> voor Werken aan de wereld</p>
                     </div>
                 </div>
-        </section>
+            </div>    
+            <div class="col-3 blokoneven" id="ref2">
+                <div class="col-12">
+                    <div class="ref2">
+                        <img src="img/ref2.png">
+                    </div>
+                    <div class="reftext">
+                        <p><b>Concert Utrecht</b></p>
+                        <div class="col-8 refline"></div>
+                        <p class="reftextbase">Een project voor een concert,<br> we moesten een website poster ontwikkelen voor op hun pagina.<br> een zeer leuk project!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 blokeven" id="ref3">
+                <div class="col-12">
+                    <div class="ref">
+                        <img src="img/ref3.png">
+                    </div>
+                    <div class="reftext">
+                        <p><b>Beautysalon</b></p>
+                        <div class="col-8 refline"></div>
+                        <p class="reftextbase">
+Dit is een website die wij voor dit<br> Beautysalon hebben ontwikkeld waar <br>mensen een afspraak kunnen inplannen</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 blokoneven" id="ref4">
+                <div class="col-12">
+                    <div class="ref">
+                        <img src="img/ref4.png">
+                    </div>
+                    <div class="reftext">
+                        <p><b>Goed doel</b></p>
+                        <div class="col-8 refline"></div>
+                        <p class="reftextbase">Een informatieve website zodat<br>bezoekers makkelijk kunnen zien wat ze doen<br> met een optie om te doneren</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
         <footer class="col-12 col-12m footer">
             <div class="col-4 col-12m footermenu">
